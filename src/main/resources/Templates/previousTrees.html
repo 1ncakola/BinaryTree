@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Previous Trees</title>
+</head>
+<body>
+<h3>Previous Trees</h3>
+<ul>
+    <li th:each="tree : ${trees}">
+        Numbers: [[${tree.inputNumbers}]] <br>
+        Tree: [[${tree.treeStructure}]]
+    </li>
+</ul>
+<a href="/enter-numbers">Go Back</a>
+</body>
+</html>
